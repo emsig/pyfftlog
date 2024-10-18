@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyfftlog"
+description = "Logarithmic Fast Fourier Transform"
+readme = "README.rst"
+requires-python = ">=3.10"
+authors = [
+  {name = "The emsig community", email = "info@emsig.xyz"},
+]
+dependencies = [
+    "numpy",
+    "scipy>=1.10",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+    "Programming Language :: Python",
+]
+dynamic = ["version"]
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+Homepage = "https://pyfftlog.rtfd.io"
+Documentation = "https://pyfftlog.rtfd.io"
+Repository = "https://github.com/emsig/pyfftlog"
+
+[project.optional-dependencies]
+docs = [
+    "ipympl",
+    "sphinx",
+    "empymod",
+    "numpydoc",
+    "ipykernel",
+    "matplotlib",
+    "pickleshare",
+    "sphinx_gallery",
+    "sphinx-rtd-theme",
+]
+tests = [
+    "flake8",
+    "pytest",
+    "coveralls",
+    "pytest_cov",
+    "flake8-pyproject",
+]
+all = [
+    "pyfftlog[docs]",
+    "pyfftlog[tests]",
+]
+build = [
+    "setuptools_scm>=8",
+    "setuptools>=64",
+]
+
+[tool.setuptools.packages.find]
+include = ["pyfftlog*"]
+
+[tool.setuptools_scm]
+version_file = "pyfftlog/version.py"
+
+[tool.coverage.run]
+relative_files = true

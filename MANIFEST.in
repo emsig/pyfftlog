@@ -1,8 +1,6 @@
 prune docs
 prune tests
 prune examples
-exclude requirements.txt
-exclude requirements-dev.txt
-exclude .readthedocs.yml
 exclude .gitignore
-exclude .coveragerc
+exclude .git_archival.txt
+exclude .gitattributes

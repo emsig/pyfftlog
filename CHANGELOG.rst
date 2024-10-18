@@ -2,6 +2,14 @@ Changelog
 #########
 
 
+v0.2.1 : pyproject.toml
+-----------------------
+
+**2024-10-18**
+
+Maintenance; changed from ``setup.py`` to ``pyproject.toml``.
+
+
 v0.2.0 : First packaged release
 -------------------------------
 

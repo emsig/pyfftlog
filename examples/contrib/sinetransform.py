@@ -18,7 +18,7 @@ The inverse is performed using the following integral,
 """
 import pyfftlog
 import numpy as np
-import scipy.integrate
+import scipy as sp
 import matplotlib.pyplot as plt
 
 ###############################################################################
@@ -108,7 +108,7 @@ f = 10**(logfc + (np.arange(1, n+1) - nc)*dlogt)
 Recon_Fun = np.zeros((len(t)))
 for i in range(len(t)):
     Recon_Fun[i] = (np.sqrt(2/np.pi)**-1) * \
-       scipy.integrate.trapz(f, a_f*np.sin(t[i]*f))
+       sp.integrate.trapezoid(f, a_f*np.sin(t[i]*f))
 
 # Plotting the input function and the reconstructed input function and also
 # the distribution of the a(f) vs f.
