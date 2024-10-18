@@ -1,8 +1,11 @@
 prune docs
 prune tests
 prune examples
-exclude requirements.txt
-exclude requirements-dev.txt
-exclude .readthedocs.yml
+prune .github
+exclude MANIFEST.in
+exclude CHANGELOG.rst
+exclude Makefile
 exclude .gitignore
-exclude .coveragerc
+exclude .readthedocs.yml
+exclude .git_archival.txt
+exclude .gitattributes

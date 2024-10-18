@@ -4,7 +4,7 @@ FFTLog-Test
 
 This example is a translation of `fftlogtest.f` from the Fortran package
 `FFTLog`, which was presented in Appendix B of [Hami00]_ and published at
-http://casa.colorado.edu/~ajsh/FFTLog. It serves as an example for the python
+https://jila.colorado.edu/~ajsh/FFTLog. It serves as an example for the python
 package `pyfftlog` (which is a Python version of `FFTLog`), in the same manner
 as the original file `fftlogtest.f` serves as an example for Fortran package
 `FFTLog`.

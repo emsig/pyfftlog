@@ -83,7 +83,7 @@ q = 0              # -1 - +1; can improve results
 # Compute minimum and maximum required inputs
 rmin = np.log10(1/ftpts.max()) + add_dec[0]
 rmax = np.log10(1/ftpts.min()) + add_dec[1]
-n = np.int(rmax - rmin)*pts_per_dec
+n = int(rmax - rmin)*pts_per_dec
 
 # Pre-allocate output
 f_resp = np.zeros(ftpts.shape, dtype=complex)

@@ -24,7 +24,8 @@ FFTLog computes the discrete Fast Fourier Transform or Fast Hankel Transform
 (of arbitrary real index) of a periodic logarithmic sequence.
 
 - Version of 13 Mar 2000.
-- For more information about FFTLog, see http://casa.colorado.edu/~ajsh/FFTLog.
+- For more information about FFTLog, see
+  https://jila.colorado.edu/~ajsh/FFTLog.
 - Andrew J S Hamilton March 1999.
 - Refs: [Talm78]_.
 
@@ -629,7 +630,8 @@ def fhtq(a, xsave, tdir=1):
         if np.mod(n, 2) == 0:
             ar = xsave[-2]
             if (tdir == 1):  # forward transform: multiply by real part
-                # Why? See http://casa.colorado.edu/~ajsh/FFTLog/index.html#ure
+                # Why? See
+                # https://jila.colorado.edu/~ajsh/FFTLog/index.html#ure
                 fct[-1] *= ar
             elif (tdir == -1):  # backward transform: divide by real part
                 # Real part ar can be zero for maximally bad choice of kr.

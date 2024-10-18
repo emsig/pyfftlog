@@ -1,7 +1,6 @@
 import time
 import warnings
 from pyfftlog import __version__
-from sphinx_gallery.sorting import ExplicitOrder, FileNameSortKey
 
 # ==== 1. Extensions  ====
 
@@ -26,16 +25,17 @@ todo_include_todos = True
 
 # Sphinx gallery configuration
 sphinx_gallery_conf = {
-    'examples_dirs': '../examples',
-    'gallery_dirs': 'examples',
-    'subsection_order': ExplicitOrder([
-        '../examples/contrib',
-        ]),
+    'examples_dirs': [
+        '../examples',
+        ],
+    'gallery_dirs': [
+        'examples',
+        ],
     'capture_repr': ('_repr_html_', '__repr__'),
     # Patter to search for example files
     "filename_pattern": r"\.py",
     # Sort gallery example by file name instead of number of lines (default)
-    "within_subsection_order": FileNameSortKey,
+    "within_subsection_order": "FileNameSortKey",
     # Remove the settings (e.g., sphinx_gallery_thumbnail_number)
     'remove_config_comments': True,
     # Show memory
@@ -88,7 +88,6 @@ exclude_patterns = ['_build', '../tests']
 html_theme = 'sphinx_rtd_theme'
 html_theme_options = {
     'logo_only': True,
-    'display_version': True,
     'prev_next_buttons_location': 'both',
 }
 html_static_path = ['_static']
@@ -104,17 +103,14 @@ html_context = {
     'menu_links_name': 'Links',
     'menu_links': [
         ('<i class="fa fa-github fa-fw"></i> Source Code',
-         'https://github.com/prisae/pyfftlog'),
+         'https://github.com/emsig/pyfftlog'),
     ],
 }
 
 htmlhelp_basename = 'pyfftlogdoc'
-
-
-# -- CSS fixes --
-def setup(app):
-    app.add_stylesheet("style.css")
-
+html_css_files = [
+    "style.css",
+]
 
 # ==== 4. Other Document Type Settings ====
 # Options for LaTeX output

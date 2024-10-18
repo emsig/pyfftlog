@@ -7,7 +7,6 @@ pyfftlog
 Version: |version| ~ Date: |today|
 
 .. include:: ../README.rst
-  :start-after: sphinx-inclusion-marker
 
 .. toctree::
    :maxdepth: 2

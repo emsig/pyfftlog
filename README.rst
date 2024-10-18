@@ -1,30 +1,13 @@
-.. image:: https://readthedocs.org/projects/pyfftlog/badge/?version=latest
-   :target: https://pyfftlog.readthedocs.io/en/latest
-   :alt: Documentation Status
-.. image:: https://github.com/prisae/pyfftlog/workflows/pytest/badge.svg?branch=master
-   :target: https://github.com/prisae/pyfftlog/actions
-   :alt: GitHub Actions
-.. image:: https://coveralls.io/repos/github/prisae/pyfftlog/badge.svg?branch=master
-   :target: https://coveralls.io/github/prisae/pyfftlog?branch=master
-   :alt: Coveralls
-.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.3830364.svg
-   :target: https://doi.org/10.5281/zenodo.3830364
-   :alt: Zenodo DOI
-
-
-.. sphinx-inclusion-marker
-
-
 `pyfftlog` - A python version of FFTLog
 =======================================
 
 This is a python version of the logarithmic FFT code *FFTLog* as presented in
 Appendix B of `Hamilton (2000)
-<http://dx.doi.org/10.1046/j.1365-8711.2000.03071.x>`_ and published at
-`casa.colorado.edu/~ajsh/FFTLog <http://casa.colorado.edu/~ajsh/FFTLog>`_.
+<https://dx.doi.org/10.1046/j.1365-8711.2000.03071.x>`_ and published at
+`jila.colorado.edu/~ajsh/FFTLog <https://jila.colorado.edu/~ajsh/FFTLog>`_.
 
-A simple `f2py`-wrapper (`fftlog`) can be found on `github.com/prisae/fftlog
-<https://github.com/prisae/fftlog>`_.  Tests have shown that `fftlog` is a bit
+A simple `f2py`-wrapper (`fftlog`) can be found on `github.com/emsig/fftlog
+<https://github.com/emsig/fftlog>`_.  Tests have shown that `fftlog` is a bit
 faster than `pyfftlog`, but `pyfftlog` is easier to implement, as you only need
 `NumPy` and `SciPy`, without the need to compile anything.
 
@@ -38,7 +21,7 @@ test from the original code, and my use case, which is `pyfftlog.fftl` with
 (forward). Please let me know if you encounter any issues.
 
 - **Documentation**: https://pyfftlog.readthedocs.io
-- **Source Code**: https://github.com/prisae/pyfftlog
+- **Source Code**: https://github.com/emsig/pyfftlog
 
 
 Description of FFTLog from the FFTLog-Website
@@ -62,8 +45,8 @@ Hankel transform.
 The FFTLog algorithm was originally proposed by `Talman (1978)
 <http://dx.doi.org/10.1016/0021-9991(78)90107-9>`_.
 
-*For the full documentation, see* `casa.colorado.edu/~ajsh/FFTLog
-<http://casa.colorado.edu/~ajsh/FFTLog>`_.
+*For the full documentation, see* `jila.colorado.edu/~ajsh/FFTLog
+<https://jila.colorado.edu/~ajsh/FFTLog>`_.
 
 
 Installation
@@ -92,7 +75,7 @@ All releases have a Zenodo-DOI, which can be found on `10.5281/zenodo.3830364
 <https://doi.org/10.5281/zenodo.3830364>`_.
 
 Be kind and give credits by citing `Hamilton (2000)
-<http://dx.doi.org/10.1046/j.1365-8711.2000.03071.x>`_. See the
+<https://dx.doi.org/10.1046/j.1365-8711.2000.03071.x>`_. See the
 `references-section
 <https://pyfftlog.readthedocs.io/en/stable/references.html>`_ in the manual for
 full references.
