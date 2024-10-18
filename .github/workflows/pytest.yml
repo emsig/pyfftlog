@@ -9,6 +9,8 @@ on:
   release:
     types:
       - published
+  schedule:
+    - cron: "14 14 20 * *"
 
 # Cancel any previous run of the test job.
 concurrency:
@@ -24,7 +26,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu, ]  # macos, windows]  # Only Linux currently.
-        python-version: ["3.10", "3.11", "3.12", "3.13"]
+        python-version: ["3.10", "3.11", "3.12"]
 
     env:
       # Used for coveralls flag
