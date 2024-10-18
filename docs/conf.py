@@ -103,7 +103,7 @@ html_context = {
     'menu_links_name': 'Links',
     'menu_links': [
         ('<i class="fa fa-github fa-fw"></i> Source Code',
-         'https://github.com/prisae/pyfftlog'),
+         'https://github.com/emsig/pyfftlog'),
     ],
 }
 

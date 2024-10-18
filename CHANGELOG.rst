@@ -2,12 +2,17 @@ Changelog
 #########
 
 
-v0.2.1 : pyproject.toml
------------------------
+v0.2.1 : emsig
+--------------
 
 **2024-10-18**
 
-Maintenance; changed from ``setup.py`` to ``pyproject.toml``.
+Maintenance
+
+- Move from ``prisae`` to ``emsig``.
+- Changed from ``setup.py`` to ``pyproject.toml``.
+- Ready for numpy v2.
+- Updated all CI.
 
 
 v0.2.0 : First packaged release

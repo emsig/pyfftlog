@@ -6,8 +6,8 @@ Appendix B of `Hamilton (2000)
 <https://dx.doi.org/10.1046/j.1365-8711.2000.03071.x>`_ and published at
 `jila.colorado.edu/~ajsh/FFTLog <https://jila.colorado.edu/~ajsh/FFTLog>`_.
 
-A simple `f2py`-wrapper (`fftlog`) can be found on `github.com/prisae/fftlog
-<https://github.com/prisae/fftlog>`_.  Tests have shown that `fftlog` is a bit
+A simple `f2py`-wrapper (`fftlog`) can be found on `github.com/emsig/fftlog
+<https://github.com/emsig/fftlog>`_.  Tests have shown that `fftlog` is a bit
 faster than `pyfftlog`, but `pyfftlog` is easier to implement, as you only need
 `NumPy` and `SciPy`, without the need to compile anything.
 
@@ -21,7 +21,7 @@ test from the original code, and my use case, which is `pyfftlog.fftl` with
 (forward). Please let me know if you encounter any issues.
 
 - **Documentation**: https://pyfftlog.readthedocs.io
-- **Source Code**: https://github.com/prisae/pyfftlog
+- **Source Code**: https://github.com/emsig/pyfftlog
 
 
 Description of FFTLog from the FFTLog-Website

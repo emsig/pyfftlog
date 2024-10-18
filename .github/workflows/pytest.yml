@@ -60,8 +60,11 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install .[all]
 
+      - name: Flake8
+        run: flake8 docs/conf.py pyfftlog/ tests/ examples/
+
       - name: Test with pytest
-        run: pytest --cov=pyfftlog --flake8
+        run: pytest --cov=pyfftlog
 
       - name: Coveralls
         # [pin @develop@20230609]

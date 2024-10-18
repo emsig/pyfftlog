@@ -3,6 +3,7 @@ prune tests
 prune examples
 prune .github
 exclude MANIFEST.in
+exclude CHANGELOG.rst
 exclude Makefile
 exclude .gitignore
 exclude .readthedocs.yml
